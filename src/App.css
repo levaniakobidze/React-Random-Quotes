@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +9,31 @@
 }
 
 body {
-  background-image: url('https://images.pexels.com/photos/2318025/pexels-photo-2318025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-size: cover;
-
+ 
+  overflow: hidden;
 }
 
+.main {
+  width: 100%;
+  overflow: hidden;
+
+
+}
+.main-img-cont {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+ 
+}
+.main-img-cont img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+ 
+
+}
 .wrapper {
   margin: 0 auto;
 
@@ -18,8 +42,51 @@ body {
   margin-top: 9rem;
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
+    rgba(115, 115, 116, 0.7),
+    rgba(0, 0, 0, 0.3));
 
  
+}
+
+.button-cont {
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 20px;
+}
+button {
+  width: 130px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 1),
+    rgba(8, 8, 8, 0.3));
+    border-radius:5px ;
+
+}
+.author {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.author p {
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Yellowtail', cursive;
+}
+.text-cont {
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+}
+.text-cont h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
 }
