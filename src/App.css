@@ -16,7 +16,8 @@ body {
 .main {
   width: 100%;
   overflow: hidden;
-
+  height:100vh; 
+  transition: all 0.5s;
 
 }
 .main-img-cont {
@@ -42,9 +43,11 @@ body {
   margin-top: 9rem;
   background: linear-gradient(
     to right bottom,
-    rgba(115, 115, 116, 0.7),
-    rgba(0, 0, 0, 0.3));
-
+    rgb(255, 255, 255),
+    rgba(255, 255, 255,1));
+    box-shadow: 5px 10px 20px #888888;
+    transition: all 0.5s;
+    border-radius: 10px;   
  
 }
 
@@ -60,12 +63,11 @@ button {
   cursor: pointer;
   outline: none;
   border: 0;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 1),
-    rgba(8, 8, 8, 0.3));
+background-color: rgb(214, 205, 205);
     border-radius:5px ;
-
+ color:#fff;
+ box-shadow:inset 0px 0px 20px #cacaca;
+ font-size: 17px;
 }
 .author {
   display: flex;
@@ -74,7 +76,7 @@ button {
 }
 .author p {
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Yellowtail', cursive;
 }
 .text-cont {
